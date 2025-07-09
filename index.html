@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblocked Games G+ - Free Online Games</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <button class="menu-btn">
+                        <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                    <h1 class="site-title">Unbanned G+</h1>
+                </div>
+                <div class="header-center">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search games..." class="search-input">
+                        <button class="search-btn-input">
+                            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button class="theme-toggle" id="themeToggle">
+                        <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+                        </svg>
+                        <svg class="theme-icon moon-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Title Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1 class="main-title">Unblocked Games G+</h1>
+                    <p class="main-subtitle">
+                        <span class="underline">Unbanned Games G+</span> offers easy access to a wide range of games for endless fun!
+                    </p>
+                </div>
+                <div class="hero-right">
+                    <div class="g-badge">
+                        <span class="g-letter">G</span>
+                        <div class="g-text">
+                            <div>Unblocked</div>
+                            <div>Games G+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Buttons -->
+    <section class="nav-section">
+        <div class="container">
+            <div class="nav-buttons">
+                <button class="nav-btn active" data-category="all">All Games</button>
+                <button class="nav-btn" data-category="new">New Games</button>
+                <button class="nav-btn" data-category="action">Action</button>
+                <button class="nav-btn" data-category="racing">Racing</button>
+                <button class="nav-btn" data-category="puzzle">Puzzle</button>
+                <button class="nav-btn" data-category="sports">Sports</button>
+                <button class="nav-btn" data-category="adventure">Adventure</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section class="search-results-section hidden" id="searchResults">
+        <div class="container">
+            <h2 class="section-title search-title">
+                🔍 Search Results 🔍
+            </h2>
+            <div class="games-grid" id="search-games">
+                <!-- Search results will be populated here -->
+            </div>
+            <div class="no-results hidden" id="noResults">
+                <p>No games found. Try a different search term!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Games Section -->
+    <section class="games-section" data-category="all">
+        <div class="container">
+            <h2 class="section-title games-title">
+                🎮Top Unblocked HTML5 Games Online!🎮
+            </h2>
+
+            <div class="games-grid" id="main-games">
+                <!-- Games will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Action Games Section -->
+    <section class="games-section" data-category="action">
+        <div class="container">
+            <h2 class="section-title action-title">
+                ⚔️ Action & Fighting Games ⚔️
+            </h2>
+
+            <div class="games-grid" id="action-games">
+                <!-- Action games will be populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Racing Games Section -->
+    <section class="games-section" data-category="racing">
+        <div class="container">
+            <h2 class="section-title racing-title">
+                🏎️ Racing & Driving Games 🏎️
+            </h2>
+
+            <div class="games-grid" id="racing-games">
+                <!-- Racing games will be populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Puzzle Games Section -->
+    <section class="games-section" data-category="puzzle">
+        <div class="container">
+            <h2 class="section-title puzzle-title">
+                🧩 Puzzle & Strategy Games 🧩
+            </h2>
+
+            <div class="games-grid" id="puzzle-games">
+                <!-- Puzzle games will be populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sports Games Section -->
+    <section class="games-section" data-category="sports">
+        <div class="container">
+            <h2 class="section-title sports-title">
+                ⚽ Sports & Basketball Games ⚽
+            </h2>
+
+            <div class="games-grid" id="sports-games">
+                <!-- Sports games will be populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Adventure Games Section -->
+    <section class="games-section" data-category="adventure">
+        <div class="container">
+            <h2 class="section-title adventure-title">
+                🗺️ Adventure & RPG Games 🗺️
+            </h2>
+
+            <div class="games-grid" id="adventure-games">
+                <!-- Adventure games will be populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- New Games Section -->
+    <section class="games-section" data-category="new">
+        <div class="container">
+            <h2 class="section-title new-games-title">
+                🎮Explore New Unblocked Games Today!🎮
+            </h2>
+
+            <div class="games-grid" id="new-games">
+                <!-- New games will be populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Detail Modal -->
+    <div class="game-modal hidden" id="gameModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div class="modal-body">
+                <div class="game-detail-image">
+                    <img id="modalGameImage" src="" alt="">
+                </div>
+                <div class="game-detail-info">
+                    <h2 id="modalGameTitle"></h2>
+                    <div class="game-tags">
+                        <span class="game-tag" id="modalGameCategory"></span>
+                        <span class="game-tag popularity">⭐ Popular</span>
+                    </div>
+                    <p id="modalGameDescription"></p>
+                    <div class="game-features">
+                        <h3>Game Features:</h3>
+                        <ul id="modalGameFeatures"></ul>
+                    </div>
+                    <div class="modal-actions">
+                        <button class="play-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polygon points="5,3 19,12 5,21"></polygon>
+                            </svg>
+                            Play Now
+                        </button>
+                        <button class="favorite-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                            </svg>
+                            Add to Favorites
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Info Section -->
+    <section class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <h2 class="footer-title">
+                    ❄Unblocked Games G+ - Your Ultimate Free Gaming Hub❄
+                </h2>
+
+                <div class="footer-text">
+                    <p>
+                        Step into the world of <strong>Unblocked Games G+</strong>, where a massive collection of free, unblocked games awaits you.
+                        From classic old favorites to the hottest new releases, our platform is designed to provide endless entertainment,
+                        no matter where you are.
+                    </p>
+
+                    <p>
+                        Looking for thrilling google+ games you can play at school or on your Chromebook? Look no further! <strong>Unblocked Games G+</strong> offers a seamless gaming experience with no restrictions. Whether you're a fan of adrenaline-pumping challenges like <strong>Survival Race</strong> or prefer timeless classics like <strong>Minecraft</strong> and <strong>Roblox</strong>, you'll find something to match your style and skill level.
+                    </p>
+
+                    <div class="features-section">
+                        <h3 class="features-title">Why Choose Unblocked Games G+?</h3>
+                        <div class="features-list">
+                            <p>A wide variety of <strong>action, racing, strategy, and adventure games</strong>.</p>
+                            <p>Fully optimized for <strong>Chromebooks classroom 6x</strong> and school networks.</p>
+                            <p>Teacher-approved, making it safe and suitable for all ages.</p>
+                            <p>No VPN required—just click and play anytime, anywhere!</p>
+                        </div>
+                    </div>
+
+                    <div class="top-games-section">
+                        <h4 class="top-games-title">Top HTML5 Games Unblocked Students Love:</h4>
+                        <div class="top-games-list">
+                            <p><strong>1. 1v1.lol</strong></p>
+                            <p><strong>2. Roblox</strong></p>
+                            <p><strong>3. Granny</strong></p>
+                            <p><strong>4. Gunship</strong></p>
+                            <p><strong>5. CS 1.6</strong></p>
+                        </div>
+                    </div>
+
+                    <p>
+                        At <strong>Unbanned Games Google Plus</strong>, we make it easy for you to dive into your favorite games without any barriers.
+                        Whether you're at school, in the office, or relaxing at home, our site provides a simple and enjoyable gaming
+                        experience. Explore educational google games, online unbanned multiplayer options, and casual classics—all in
+                        one place!
+                    </p>
+
+                    <p>
+                        Don't miss out on hours of excitement. <span class="bookmark-text">Bookmark</span> Unblocked Games G+ and discover a gaming paradise that's
+                        just a click away.
+                    </p>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="footer-site-title">
+                        <strong>Unblocked Games G+</strong>
+                    </p>
+                    <p class="footer-description">
+                        Discover a wide variety of <strong>Unblocked Games</strong> crafted for safe and enjoyable gameplay in school environments.
+                        Perfect for students, our collection offers a mix of fun and educational games to make every break both entertaining
+                        and enriching!
+                    </p>
+                    <div class="footer-links">
+                        <span>- Docs -</span>
+                        <span>- Contact -</span>
+                        <span>- Classroom -</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
